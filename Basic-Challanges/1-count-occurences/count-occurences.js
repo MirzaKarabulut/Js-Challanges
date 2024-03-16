@@ -14,5 +14,13 @@ function countOccurrences(str, findInStr) {
   }
 }
 
-const x = countOccurrences("merhabalar", "a");
+const x = countOccurrences("hello","l");
 console.log(x);
+
+// NEW WAYS
+
+const countOccurrences = (str, char) => {
+  console.log(str.split(char).length - 1);
+}
+
+countOccurrences("hello world","o");
